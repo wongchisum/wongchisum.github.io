@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Wongchisum">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-前端建设-前端建设1-一个项目的初始化建设" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/26/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE-%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE1-%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BB%BA%E8%AE%BE/" class="article-date">
+  <time class="dt-published" datetime="2021-05-25T16:17:45.000Z" itemprop="datePublished">2021-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/26/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE-%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE1-%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BB%BA%E8%AE%BE/">[前端建设]前端建设1:一个项目的初始化建设</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>前言：</p>
+<p>2021年三月底离职，在四月份加入一家小公司。</p>
+<p>离职期间除了巩固自己的前端知识之外，我也试着做一些小的尝试。</p>
+<p>算是对前端基础建设的一些摸索。</p>
+<p>“前端”二字，在外人看来可能是极其平凡或朴素的，</p>
+<p>但是对于相关从业者而言，前端更像是浩浩汤汤的江水。</p>
+<p>前端是业务的侍者，从始至终前端要做很多的事情，去服务好业务的开发。</p>
+<p>1.技术选型</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">该用Vue，React还是Angular？</span><br><span class="line"></span><br><span class="line">该使用什么状态管理方案？</span><br><span class="line"></span><br><span class="line">该使用什么请求库？</span><br><span class="line"></span><br><span class="line">该不该使用Typescript？</span><br></pre></td></tr></table></figure>
+
+<p>在开发之前，要做很多的思考。</p>
+<p>我们要使用什么框架什么技术，采用什么方案。</p>
+<p>衡量越多，思考越多，人越成熟，项目越稳健。</p>
+<p>至于我的思考，我的价值取向是趋向于“稳健”的。</p>
+<p>假设某个框架由大团队定期维护，有足够的技术方案和文档。</p>
+<p>和一个后起之秀的小团队，可能做的是新的潮流，但维护初期可能要爬坑。</p>
+<p>我的选择会是前者。</p>
+<p>这可能是我选择使用React的一个原因。</p>
+<p>自私一点的想法，我是使用者，我没有义务去为开发者爬坑或者调试，顶多反馈。</p>
+<p>我希望我的技术是更好的应用于项目的运行和技术的拓展。</p>
+<p>这是一个狭隘自私的开发者，所以，当我看到别人能积极参与开源库的建设维护时，</p>
+<p>我其实是非常尊敬的。</p>
+<p>也希望我能摒弃这种狭隘的思想，在追求稳健的同时，能冒一点点风险。</p>
+<p>稳健可以让项目强大，但冒险才会让自己强大。</p>
+<p>2.技术规范</p>
+<p>我大致的把技术规范划分为“前端的规范”，以及“前后端的规范”。</p>
+<p>前端的规范指的是前端在开发/调试/发布等一系列规范。</p>
+<p>大致的列举：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1.git workflow(git工作流规范)。</span><br><span class="line">前端的仓库分支的关系如何，前端测试时如何操作，发布时如何操作，冲突如何处理等。</span><br><span class="line"></span><br><span class="line">2.eslint （语法规范）</span><br><span class="line">前端在书写代码的过程中，js语法以及react hooks应该遵循什么样的规范。</span><br><span class="line">这部分不应该盲从，有些规则是不合适的，有些是过时的。</span><br><span class="line">比如:eslint里面关于jsx文件没有引入React的建议，在React17版本就不适合了。</span><br><span class="line"></span><br><span class="line">3.prettier (格式规范)</span><br><span class="line">经典问题：一个Tab到底等于几个空格缩进...</span><br><span class="line"></span><br><span class="line">4.业务上的规范</span><br><span class="line">比如：前端的异步请求，try catch捕获错误时要做错误上报，控制台输出错误信息和堆栈信息等...</span><br></pre></td></tr></table></figure>
+
+
+
+<p>前后端的规范，视前后端的工作配合决定。</p>
+<p>如果是一个前后端不分离的项目，其实规范会少很多，</p>
+<p>因为前端的职责可能是负责视图上的支持（写一个静态页，调一些样式）。</p>
+<p>但前后端分离的项目，工作方面会有很多配合，需要前后端做出一些约定来规范彼此的开发。</p>
+<p>举个例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">1.异步请求的状态码，需要约定某个字段来判断操作是否成功</span><br><span class="line"></span><br><span class="line">&#123;&quot;code&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;Fail&quot;&#125; // code === &#x27;0&#x27;代表请求成功但操作失败</span><br><span class="line"></span><br><span class="line">2.固定的请求格式,比如约定好列表的接口</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">	&quot;code&quot;:&quot;1&quot;, // 请求成功</span><br><span class="line">	&quot;list&quot;:[], // 列表的数据</span><br><span class="line">	&quot;page&quot;:&quot;&#123;</span><br><span class="line">		&quot;currentPage&quot;:1,</span><br><span class="line">		&quot;linesPerpage&quot;:10,</span><br><span class="line">		&quot;totalPage&quot;:1,</span><br><span class="line">		&quot;totalNum&quot;:0</span><br><span class="line">	&#125;&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">3.后端设计数据库的表时，提供相应的约束给前端，方便前端做校验</span><br><span class="line"></span><br><span class="line">// 假设某个字段后端的设计是这样的</span><br><span class="line">name char(32)</span><br><span class="line"></span><br><span class="line">// 前端进行相应的长度校验，防止输入过长导致入库失败的错误等</span><br></pre></td></tr></table></figure>
+
+<p>确定好规范才能更好的约束行为，做合理的有效的开发。</p>
+<p>当然，实际上的规范有很多，有有形的，有无形的（约定俗成，或者是前端通过一些处理来实现规范），我们后续再补充。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/26/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE-%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE1-%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BB%BA%E8%AE%BE/" data-id="ckp4a7mpe0004gou73bhrau37" data-title="[前端建设]前端建设1:一个项目的初始化建设" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE/" rel="tag">前端建设</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-关于我" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/26/%E5%85%B3%E4%BA%8E%E6%88%91/" class="article-date">
+  <time class="dt-published" datetime="2021-05-25T16:09:06.000Z" itemprop="datePublished">2021-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/26/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>小名Wong,位于厦门，就职于小公司。</p>
+<p>两年半开发经验的前端开发工程师。</p>
+<p>技术栈：</p>
+<p>前端框架(视图库):React一年半,Vue一年开发经验。</p>
+<p>前端框架相应生态的使用者，</p>
+<p>朴素NodeJS服务搭建。</p>
+<p>Docker应用的使用，参与前端工程化建设，参与公司部署环节。</p>
+<p>迫于现状，什么都要学，什么都要做。</p>
+<p>虽然很菜，但在努力变好。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/26/%E5%85%B3%E4%BA%8E%E6%88%91/" data-id="ckp4a7mp00001gou7c6re5dvi" data-title="关于我" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E/" rel="tag">关于</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/25/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-05-25T15:42:21.262Z" itemprop="datePublished">2021-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/25/hello-world/" data-id="ckp4a7mot0000gou74w42gafc" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E/" rel="tag">关于</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE/" rel="tag">前端建设</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%85%B3%E4%BA%8E/" style="font-size: 10px;">关于</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE/" style="font-size: 10px;">前端建设</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/26/%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE-%E5%89%8D%E7%AB%AF%E5%BB%BA%E8%AE%BE1-%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BB%BA%E8%AE%BE/">[前端建设]前端建设1:一个项目的初始化建设</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/26/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Wongchisum<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
